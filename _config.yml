@@ -1,0 +1,37 @@
+# Site settings
+title: WebConfs - A blog about web conferences
+email: jamesrwithington@gmail.com
+description: A blog about my favorite web conferences.
+baseurl: '/webconfs'
+url: "http://webconfs.me" # the base hostname & protocol for your site
+twitter_username: guilh
+paginate: 3
+
+# Build settings
+markdown: kramdown
+permalink: /:title
+
+# Default Settings
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+     author: Jim Withington
+     layout: "post"
+     category: conferences
+     comments: true
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages"
+    values: 
+     layout: "page"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "drafts"
+    values: 
+     layout: "page"
